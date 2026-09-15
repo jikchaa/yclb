@@ -1,0 +1,60 @@
+---
+import { url } from '../lib/url';
+
+interface Props {
+  title: string;
+  date: string | null;
+  place?: string;
+  poster: string;
+  posterW: number;
+  posterH: number;
+  program: string;
+  /* 첫 화면에 보이는 카드만 즉시 받아 온다. */
+  eager?: boolean;
+}
+
+const { title, date, place, poster, posterW, posterH, program, eager = false } = Astro.props;
+
+const d = date ? new Date(date + 'T00:00:00+09:00') : null;
+const label = d
+  ? `${d.getFullYear()}. ${String(d.getMonth() + 1).padStart(2, '0')}`
+  : '';
+---
+
+<article class="card" data-program={program}>
+  <img src={url(poster)} alt={`${title} 포스터`}
+       width={posterW} height={posterH}
+       loading={eager ? 'eager' : 'lazy'} decoding="async" />
+  <div class="meta">
+    {label && <p class="when"><time datetime={date!}>{label}</time></p>}
+    <h3>{title}</h3>
+    {place && <p class="where">{place}</p>}
+  </div>
+</article>
+
+<style>
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  /* 포스터는 16:9 와 3:4 가 섞여 있다. 상자를 16:9 로 고정하고 가운데를 보인다. */
+  .card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    background: var(--paper-2);
+  }
+  .meta { padding: 1rem 1.1rem 1.15rem; }
+  .when {
+    margin: 0 0 0.3rem;
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em;
+    color: var(--wine-600); font-variant-numeric: tabular-nums;
+  }
+  h3 { font-size: 0.98rem; line-height: 1.34; }
+  .where { margin: 0.4rem 0 0; font-size: 0.84rem; color: var(--text-3); }
+</style>

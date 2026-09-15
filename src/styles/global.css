@@ -1,0 +1,179 @@
+/* ------------------------------------------------------------------ *
+ * YOUTH CLUB SEOUL — 공개 사이트
+ *
+ * 색은 포스터에서 왔다. 34장이 모두 버건디 바탕이라, 사이트를 어둡게 하면
+ * 포스터와 배경이 서로 싸운다. 종이처럼 밝은 바탕에 버건디를 구조색으로
+ * 쓰면 포스터가 유일한 색면이 되어 저절로 앞으로 나온다.
+ *
+ * 한글은 나눔바른고딕(SIL OFL), 라틴·숫자는 Helvetica — 내부 보드와 같은 짝이다.
+ * 서브셋에 라틴이 없으므로 영문은 자동으로 Helvetica가 맡는다.
+ * ------------------------------------------------------------------ */
+
+@font-face {
+  font-family: 'Barun';
+  src: url('/fonts/nbg-400.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
+}
+@font-face {
+  font-family: 'Barun';
+  src: url('/fonts/nbg-700.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
+}
+
+:root {
+  color-scheme: light;
+
+  /* 포스터에서 뽑은 값 */
+  --wine-900: #2E0A0C;
+  --wine-800: #4A0E11;
+  --wine-700: #6B1416;
+  --wine-600: #7D1918;
+  --wine-500: #8D1F1D;
+  --wine-400: #A62A28;
+
+  --paper:    #FAF7F2;
+  --paper-2:  #F3EDE4;
+  --line:     #E3DACD;
+  --line-2:   #CFC2B0;
+
+  --text:     #211719;
+  --text-2:   #6A5C5E;
+  --text-3:   #9A8C8D;
+
+  --font-sans: 'Barun', 'Helvetica Neue', Helvetica, Arial,
+    'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+
+  --shell: 68rem;
+  --prose: 40rem;
+}
+
+/* 브랜드 사이트는 한 가지 얼굴로 간다. 뷰어 테마가 색을 흔들지 않게 고정한다. */
+:root[data-theme='dark'], :root[data-theme='light'] { color-scheme: light; }
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.68;
+  letter-spacing: -0.004em;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--wine-600); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--wine-400); }
+
+:focus-visible {
+  outline: 2px solid var(--wine-600);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+h1, h2, h3 { letter-spacing: -0.03em; line-height: 1.14; text-wrap: balance; margin: 0; }
+
+/* ---------- 레이아웃 ---------- */
+
+.shell {
+  max-width: var(--shell);
+  margin: 0 auto;
+  padding-inline: 1.25rem;
+}
+
+.band { padding-block: clamp(3.5rem, 9vw, 6.5rem); }
+.band + .band { border-top: 1px solid var(--line); }
+.band-wine { background: var(--wine-800); color: #F6EDE9; border-top: 0; }
+.band-wine a { color: #E8C3B8; }
+.band-paper { background: var(--paper-2); }
+
+/* ---------- 눈금 라벨 ---------- */
+
+.kicker {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--wine-600);
+  margin: 0 0 1rem;
+}
+.band-wine .kicker { color: #D8A79A; }
+
+.lede {
+  font-size: clamp(1.02rem, 2.2vw, 1.22rem);
+  color: var(--text-2);
+  max-width: var(--prose);
+  margin: 1.25rem 0 0;
+}
+.band-wine .lede { color: #E3CEC8; }
+
+/* ---------- 버튼 ---------- */
+
+.btn {
+  display: inline-block;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.94rem;
+  padding: 0.82rem 1.6rem;
+  border: 1px solid var(--wine-700);
+  border-radius: 2px;
+  background: var(--wine-700);
+  color: #FCF6F3;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.btn:hover { background: var(--wine-500); color: #fff; }
+
+.btn-ghost { background: transparent; color: var(--wine-700); }
+.btn-ghost:hover { background: var(--wine-700); color: #FCF6F3; }
+
+.band-wine .btn {
+  background: #F6EDE9; border-color: #F6EDE9; color: var(--wine-800);
+}
+.band-wine .btn:hover { background: #fff; color: var(--wine-900); }
+
+/* ---------- 본문 ---------- */
+
+.prose { max-width: var(--prose); }
+.prose h2 { font-size: 1.32rem; margin: 2.8rem 0 0.9rem; }
+.prose h3 {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--wine-600); margin: 2.4rem 0 0.7rem;
+}
+.prose p { margin: 0 0 1.1rem; }
+.prose ul { margin: 0 0 1.4rem; padding-left: 1.15rem; }
+.prose li { margin-bottom: 0.4rem; }
+.prose blockquote {
+  margin: 1.6rem 0;
+  padding: 0.2rem 0 0.2rem 1.2rem;
+  border-left: 2px solid var(--wine-600);
+  color: var(--text-2);
+}
+.prose strong { color: var(--text); }
+
+/* ---------- 표 · 자잘한 것 ---------- */
+
+.hr { height: 1px; background: var(--line); border: 0; margin: 0; }
+
+.note {
+  font-size: 0.84rem;
+  color: var(--text-3);
+  border: 1px dashed var(--line-2);
+  border-radius: 2px;
+  padding: 0.9rem 1.05rem;
+  margin: 1.6rem 0 0;
+}
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}

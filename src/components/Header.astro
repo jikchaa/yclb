@@ -1,0 +1,46 @@
+---
+import { nav } from '../data/site';
+import { url } from '../lib/url';
+const here = Astro.url.pathname.replace(/\/$/, '');
+---
+
+<header class="top">
+  <div class="shell row">
+    <a class="brand" href={url('/')} aria-label="YOUTH CLUB SEOUL 홈">
+      <img src={url('/logo.png')} alt="YOUTH CLUB SEOUL" width="900" height="211" />
+    </a>
+    <nav aria-label="주요 메뉴">
+      {nav.map((n) => (
+        <a href={url(n.href)}
+           aria-current={here.endsWith(n.href) ? 'page' : undefined}>{n.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<style>
+  .top {
+    background: var(--wine-800);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .row {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; min-height: 3.75rem; flex-wrap: wrap;
+    padding-block: 0.6rem;
+  }
+  .brand { display: block; flex: none; }
+  /* 로고는 원본이 어두운 바탕용 흰 워드마크다. */
+  .brand img { height: 1.4rem; width: auto; }
+
+  nav { display: flex; gap: 0.35rem 1.35rem; flex-wrap: wrap; }
+  nav a {
+    color: #E0C8C2; text-decoration: none;
+    font-size: 0.82rem; font-weight: 700;
+    letter-spacing: 0.11em; text-transform: uppercase;
+    padding: 0.3rem 0;
+  }
+  nav a:hover { color: #fff; }
+  nav a[aria-current='page'] {
+    color: #fff; box-shadow: inset 0 -2px 0 #C98A7C;
+  }
+</style>

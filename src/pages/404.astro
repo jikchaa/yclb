@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/url';
+---
+
+<Base title="페이지를 찾을 수 없습니다" noindex>
+  <section class="band">
+    <div class="shell prose">
+      <h1>404</h1>
+      <p>찾으시는 페이지가 없습니다. 주소가 바뀌었거나 지워진 자리입니다.</p>
+      <p><a href={url('/')}>홈으로 돌아가기 &rarr;</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  h1 {
+    font-size: clamp(3rem, 12vw, 6rem);
+    color: var(--wine-700);
+    margin-bottom: 1.2rem;
+  }
+</style>

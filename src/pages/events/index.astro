@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EventCard from '../../components/EventCard.astro';
+import Grid from '../../components/Grid.astro';
+import { programs } from '../../data/site';
+
+const all = (await getCollection('events'))
+  .map((e) => e.data)
+  .filter((e) => !e.draft && e.date)
+  .sort((a, b) => (a.date! < b.date! ? 1 : -1));
+
+/* 연도별로 묶어 아래로 내려간다 — 최근이 위다. */
+const years = [...new Set(all.map((e) => e.date!.slice(0, 4)))];
+const byYear = years.map((y) => ({ y, list: all.filter((e) => e.date!.startsWith(y)) }));
+---
+
+<Base title="Events"
+      description={`${years[years.length - 1]}년부터 서울유스클럽이 열어 온 ${all.length}회의 모임 기록입니다.`}>
+  <section class="band band-wine">
+    <div class="shell">
+      <p class="kicker">Events</p>
+      <h1>{all.length}회의 기록.</h1>
+      <p class="lede">
+        {years[years.length - 1]}년 {all[all.length - 1].date!.slice(5, 7)}월부터 지금까지,
+        실제로 열린 모임만 남겨 둡니다.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="filter" id="filter" hidden>
+        <button type="button" class="on" data-f="all" aria-pressed="true">전체</button>
+        {programs.map((p) => (
+          <button type="button" data-f={p.id} aria-pressed="false">{p.label}</button>
+        ))}
+      </div>
+
+      {byYear.map(({ y, list }) => (
+        <section class="year" data-year={y}>
+          <h2>{y}</h2>
+          <Grid>{list.map((e) => <EventCard {...e} />)}</Grid>
+        </section>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<script>
+  /* 자바스크립트가 없으면 전부 보인다 — 필터는 있으면 좋은 것에 그친다. */
+  const bar = document.getElementById('filter');
+  if (bar) {
+    bar.hidden = false;
+    bar.addEventListener('click', (ev) => {
+      const btn = (ev.target as HTMLElement).closest('button');
+      if (!btn) return;
+      const want = btn.dataset.f;
+
+      bar.querySelectorAll('button').forEach((b) => {
+        const on = b === btn;
+        b.classList.toggle('on', on);
+        b.setAttribute('aria-pressed', String(on));
+      });
+
+      document.querySelectorAll<HTMLElement>('.card').forEach((c) => {
+        c.hidden = want !== 'all' && c.dataset.program !== want;
+      });
+
+      /* 그 해에 남은 카드가 없으면 연도 제목도 같이 감춘다. */
+      document.querySelectorAll<HTMLElement>('.year').forEach((s) => {
+        s.hidden = !s.querySelector('.card:not([hidden])');
+      });
+    });
+  }
+</script>
+
+<style>
+  h1 { font-size: clamp(2rem, 6vw, 3.2rem); }
+
+  .filter {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin: 0 0 2.6rem;
+  }
+  .filter button {
+    font: inherit; font-size: 0.82rem; font-weight: 700;
+    padding: 0.45rem 0.95rem;
+    border: 1px solid var(--line-2); border-radius: 2px;
+    background: transparent; color: var(--text-2); cursor: pointer;
+  }
+  .filter button:hover { border-color: var(--wine-600); color: var(--wine-600); }
+  .filter button.on {
+    background: var(--wine-700); border-color: var(--wine-700); color: #FCF6F3;
+  }
+
+  .year + .year { margin-top: 3.2rem; }
+  .year h2 {
+    font-size: 0.74rem; font-weight: 700; letter-spacing: 0.2em;
+    color: var(--text-3); font-variant-numeric: tabular-nums;
+    padding-bottom: 0.7rem; margin-bottom: 1.3rem;
+    border-bottom: 1px solid var(--line);
+  }
+</style>

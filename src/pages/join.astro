@@ -1,0 +1,93 @@
+---
+import Base from '../layouts/Base.astro';
+import { site, home, joinSteps } from '../data/site';
+import { url } from '../lib/url';
+
+/* 접수 경로가 아직 붙지 않았다. 주소가 채워지면 버튼이 살아난다. */
+const live = site.joinFormUrl.length > 0;
+---
+
+<Base title="Join"
+      description="서울유스클럽 가입 신청. 모든 신청은 검토 과정을 거쳐 승인된 회원으로서 네트워크에 참여하게 됩니다.">
+  <section class="band band-wine">
+    <div class="shell">
+      <p class="kicker">{home.membership.kicker}</p>
+      <h1>가입 신청</h1>
+      <p class="lede">{home.membership.lede}</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell two">
+      <div class="how">
+        <p class="kicker">절차</p>
+        <ol>
+          {joinSteps.map((s) => <li><b>{s.step}</b> &mdash; {s.text}</li>)}
+        </ol>
+        <p class="fine">
+          보내 주신 정보는 가입 검토 목적으로만 씁니다. 수집 항목과 보유 기간은
+          <a href={url('/privacy')}>개인정보처리방침</a>에 적어 두었습니다.
+        </p>
+      </div>
+
+      <div class="box">
+        {live ? (
+          <>
+            <p class="boxlede">아래 버튼을 누르면 신청 양식으로 이동합니다.</p>
+            <p><a class="btn" href={site.joinFormUrl} target="_blank" rel="noopener">
+              신청 양식 열기
+            </a></p>
+          </>
+        ) : (
+          <>
+            <p class="boxlede">신청 접수 준비 중입니다.</p>
+            <p class="fine">
+              접수 경로가 연결되면 이 자리에서 바로 신청할 수 있습니다.
+            </p>
+            <p class="todo">
+              <b>TODO(직차)</b> — <code>src/data/site.ts</code> 의
+              <code>joinFormUrl</code> 에 현재 쓰고 있는 가입 신청 구글폼 주소를
+              넣으면 이 상자가 신청 버튼으로 바뀝니다. 사이트 자체 양식(이름·연락처
+              등을 이 페이지에서 받아 구글 시트에 적는 방식)으로 바꾸는 것은
+              그 다음 단계입니다.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  h1 { font-size: clamp(2rem, 6vw, 3.1rem); }
+
+  .two { display: grid; gap: 2.4rem; grid-template-columns: 1fr; align-items: start; }
+  @media (min-width: 54rem) {
+    .two { grid-template-columns: 1.1fr 1fr; gap: 3.4rem; }
+  }
+
+  ol { margin: 0; padding-left: 1.3rem; }
+  ol li { margin-bottom: 0.7rem; color: var(--text-2); }
+  ol b { color: var(--text); }
+
+  .fine { font-size: 0.86rem; color: var(--text-3); margin: 1.6rem 0 0; }
+
+  .box {
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 1.8rem 1.7rem;
+  }
+  .boxlede { margin: 0 0 1.2rem; font-weight: 700; }
+
+  .todo {
+    margin: 1.4rem 0 0;
+    font-size: 0.8rem; line-height: 1.6; color: var(--text-2);
+    border: 1px dashed var(--line-2); border-radius: 2px;
+    padding: 0.85rem 1rem;
+  }
+  .todo code {
+    font-size: 0.92em;
+    background: var(--paper); padding: 0.05rem 0.25rem; border-radius: 2px;
+  }
+</style>

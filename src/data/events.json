@@ -1,0 +1,480 @@
+{
+  "events": [
+    {
+      "slug": "q3-networking-andaz-2026",
+      "title": "Q3 YOUTH Networking: Andaz",
+      "date": "2026-09-13",
+      "place": "Andaz Seoul Gangnam",
+      "program": "networking",
+      "poster": "/posters/q3-networking-andaz-2026.webp",
+      "posterW": 1024,
+      "posterH": 1280
+    },
+    {
+      "slug": "osteria-lucia-wine-dinner",
+      "title": "오스테리아 루치아 와인 디너",
+      "date": "2026-09-18",
+      "place": "학동 일대",
+      "program": "wine",
+      "poster": "/posters/osteria-lucia-wine-dinner.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-hobin",
+      "title": "유스미식회: 호빈 (후덕죽 셰프)",
+      "date": "2026-09-19",
+      "place": "앰배서더 풀만 호빈",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-hobin.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "hyatt-terrace-lunch",
+      "title": "그랜드 하얏트 더 테라스 런치",
+      "date": "2026-09-20",
+      "place": "그랜드 하얏트",
+      "program": "social",
+      "poster": "/posters/hyatt-terrace-lunch.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "wine-judgment-of-paris",
+      "title": "프리미엄 와인 모임: 파리의 심판 에디션",
+      "date": null,
+      "place": "청담 일대",
+      "program": "wine",
+      "poster": "/posters/wine-judgment-of-paris.webp",
+      "posterW": 1024,
+      "posterH": 576,
+      "draft": true
+    },
+    {
+      "slug": "insight-session-2026-08",
+      "title": "Insight Session",
+      "date": "2026-08-21",
+      "place": "강남역 일대",
+      "program": "insight",
+      "poster": "/posters/insight-session-2026-08.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "sports-picnic-day",
+      "title": "Sports & Picnic Day",
+      "date": "2026-08-08",
+      "place": "성수 & 뚝섬한강 일대",
+      "program": "social",
+      "poster": "/posters/sports-picnic-day.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "hyatt-champagne-2026-08",
+      "title": "그랜드 하얏트 서울: 샴페인 프리플로우",
+      "date": "2026-08-01",
+      "place": "그랜드 하얏트 서울 1F 갤러리",
+      "program": "social",
+      "poster": "/posters/hyatt-champagne-2026-08.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "coffee-day",
+      "title": "Coffee Day",
+      "date": "2026-07-19",
+      "place": "강남역 일대",
+      "program": "social",
+      "poster": "/posters/coffee-day.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "wine-us-wines",
+      "title": "프리미엄 와인 모임: US WINES",
+      "date": "2026-07-11",
+      "place": "청담 일대",
+      "program": "wine",
+      "poster": "/posters/wine-us-wines.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "host-session-hobin",
+      "title": "YOUTH HOST SESSION: 호빈",
+      "date": "2026-06-18",
+      "place": "앰배서더 풀만 호빈",
+      "program": "insight",
+      "poster": "/posters/host-session-hobin.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "q2-networking-andaz-2026",
+      "title": "Q2 YOUTH Networking: Andaz",
+      "date": "2026-06-07",
+      "place": "Andaz Seoul Gangnam",
+      "program": "networking",
+      "poster": "/posters/q2-networking-andaz-2026.webp",
+      "posterW": 1024,
+      "posterH": 1280
+    },
+    {
+      "slug": "wine-class-france-2026",
+      "title": "YOUTH WINE CLASS: France",
+      "date": "2026-04-25",
+      "place": "Gangnam",
+      "program": "wine",
+      "poster": "/posters/wine-class-france-2026.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "wine-silver-oak",
+      "title": "프리미엄 와인 모임: Silver Oak 1995 & 2020",
+      "date": "2026-04-11",
+      "place": "논현 프라이빗 아지트",
+      "program": "wine",
+      "poster": "/posters/wine-silver-oak.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "hyatt-champagne-2026-04",
+      "title": "그랜드 하얏트 서울: 샴페인",
+      "date": "2026-04-03",
+      "place": "그랜드 하얏트 서울 1F 갤러리",
+      "program": "social",
+      "poster": "/posters/hyatt-champagne-2026-04.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "monthly-retro-four-seasons",
+      "title": "월례 회고 모임: 포시즌스 호텔",
+      "date": "2026-03-29",
+      "place": "광화문 포시즌스 호텔",
+      "program": "insight",
+      "poster": "/posters/monthly-retro-four-seasons.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "q1-networking-andaz-2026",
+      "title": "Q1 YOUTH Networking: Andaz",
+      "date": "2026-03-15",
+      "place": "Andaz Seoul",
+      "program": "networking",
+      "poster": "/posters/q1-networking-andaz-2026.webp",
+      "posterW": 1024,
+      "posterH": 1280
+    },
+    {
+      "slug": "wine-class-essentials",
+      "title": "YOUTH WINE CLASS: Essentials",
+      "date": "2026-02-27",
+      "place": "Gangnam",
+      "program": "wine",
+      "poster": "/posters/wine-class-essentials.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "year-end-night-2025",
+      "title": "Year End Night 2025",
+      "date": "2025-12-27",
+      "place": "앙트레블 강남",
+      "program": "social",
+      "poster": "/posters/year-end-night-2025.webp",
+      "posterW": 1024,
+      "posterH": 1280
+    },
+    {
+      "slug": "q4-networking-2025",
+      "title": "Q4 YOUTH Networking",
+      "date": "2025-11-02",
+      "place": "Andaz Seoul",
+      "program": "networking",
+      "poster": "/posters/q4-networking-2025.webp",
+      "posterW": 1024,
+      "posterH": 1280
+    },
+    {
+      "slug": "youth-connecting-2025",
+      "title": "YOUTH Connecting",
+      "date": "2025-08-30",
+      "place": "앨리스 스튜디오 강남점",
+      "program": "social",
+      "poster": "/posters/youth-connecting-2025.webp",
+      "posterW": 1024,
+      "posterH": 1280
+    },
+    {
+      "slug": "q3-networking-andaz-2025",
+      "title": "Q3 YOUTH Networking: Andaz",
+      "date": "2025-08-03",
+      "place": "Andaz Seoul",
+      "program": "networking",
+      "poster": "/posters/q3-networking-andaz-2025.webp",
+      "posterW": 1024,
+      "posterH": 1280
+    },
+    {
+      "slug": "wine-far-niente",
+      "title": "프리미엄 와인 모임: Far Niente 1990",
+      "date": "2025-06-20",
+      "place": "PIKA",
+      "program": "wine",
+      "poster": "/posters/wine-far-niente.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "wine-class-france-2025",
+      "title": "YOUTH WINE CLASS: France",
+      "date": "2025-05-31",
+      "place": "PIKA",
+      "program": "wine",
+      "poster": "/posters/wine-class-france-2025.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "youth-gathering-2025",
+      "title": "YOUTH Gathering 2025",
+      "date": "2025-05-17",
+      "place": "Mondrian Itaewon Seoul",
+      "program": "social",
+      "poster": "/posters/youth-gathering-2025.webp",
+      "posterW": 800,
+      "posterH": 1000
+    },
+    {
+      "slug": "wine-class-intro",
+      "title": "YOUTH WINE CLASS: Intro",
+      "date": "2025-03-01",
+      "place": "PIKA",
+      "program": "wine",
+      "poster": "/posters/wine-class-intro.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "wine-champagne-tasting",
+      "title": "프리미엄 와인 모임: 샴페인 테이스팅",
+      "date": "2025-02-21",
+      "place": "PIKA",
+      "program": "wine",
+      "poster": "/posters/wine-champagne-tasting.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "welcoming-2025-q1",
+      "title": "Q1 New Member Welcoming Night",
+      "date": "2025-02-15",
+      "place": "Gangnam",
+      "program": "social",
+      "poster": "/posters/welcoming-2025-q1.webp",
+      "posterW": 750,
+      "posterH": 1000
+    },
+    {
+      "slug": "year-end-night-2024",
+      "title": "Year End Night 2024",
+      "date": "2024-12-27",
+      "place": "Gangnam",
+      "program": "social",
+      "poster": "/posters/year-end-night-2024.webp",
+      "posterW": 1000,
+      "posterH": 1000
+    },
+    {
+      "slug": "welcoming-2024-q3",
+      "title": "Q3 New Member Welcoming Night",
+      "date": "2024-08-17",
+      "place": "Gangnam",
+      "program": "social",
+      "poster": "/posters/welcoming-2024-q3.webp",
+      "posterW": 1024,
+      "posterH": 585
+    },
+    {
+      "slug": "youth-gathering-2024",
+      "title": "YOUTH Gathering 2024",
+      "date": "2024-05-11",
+      "place": "NVM Art Lounge Hongdae",
+      "program": "social",
+      "poster": "/posters/youth-gathering-2024.webp",
+      "posterW": 1000,
+      "posterH": 1000
+    },
+    {
+      "slug": "welcoming-2024-q1",
+      "title": "Q1 New Member Welcoming Night",
+      "date": "2024-02-03",
+      "place": "Gangnam",
+      "program": "social",
+      "poster": "/posters/welcoming-2024-q1.webp",
+      "posterW": 1024,
+      "posterH": 585
+    },
+    {
+      "slug": "gourmet-kiiro",
+      "title": "유스미식회: 키이로",
+      "date": "2026-08-15",
+      "place": "키이로",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-kiiro.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-imok",
+      "title": "유스미식회: 이목 (유용욱 바베큐연구소장)",
+      "date": "2026-08-14",
+      "place": "신사 이목스모크다이닝",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-imok.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-doryang",
+      "title": "유스미식회: 도량 (철가방 요리사)",
+      "date": "2026-07-25",
+      "place": "도량 (종로 일대)",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-doryang.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-hongbogak",
+      "title": "유스미식회: 홍보각 (여경래 셰프)",
+      "date": "2026-07-15",
+      "place": "노보텔 앰배서더 강남",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-hongbogak.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-nuwa",
+      "title": "유스미식회: 누와 (박은영 셰프)",
+      "date": "2026-05-21",
+      "place": "신사스퀘어 누와",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-nuwa.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-shuchiku",
+      "title": "유스미식회: 슈치쿠",
+      "date": "2026-05-01",
+      "place": "63빌딩 슈치쿠",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-shuchiku.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-dahlia",
+      "title": "유스미식회: 달리아 다이닝 (최현석 셰프)",
+      "date": "2026-04-23",
+      "place": "달리아 다이닝",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-dahlia.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-tienmimi",
+      "title": "유스미식회: 티엔미미 (정지선 셰프)",
+      "date": "2026-04-15",
+      "place": "티엔미미 강남점",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-tienmimi.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-sushi-rikai",
+      "title": "유스미식회: 갓성비 런치 오마카세",
+      "date": "2026-04-04",
+      "place": "스시리카이",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-sushi-rikai.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-yongsan-base",
+      "title": "유스미식회: 미군기지 다이닝",
+      "date": "2026-03-28",
+      "place": "용산 미군기지",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-yongsan-base.webp",
+      "posterW": 1024,
+      "posterH": 576
+    },
+    {
+      "slug": "gourmet-conrad",
+      "title": "유스미식회: 콘래드 서울 다이닝",
+      "date": null,
+      "place": "콘래드 서울",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-conrad.webp",
+      "posterW": 1024,
+      "posterH": 576,
+      "draft": true
+    },
+    {
+      "slug": "gourmet-superpan",
+      "title": "유스미식회: 수퍼판 (서울 엄마)",
+      "date": null,
+      "place": "수퍼판",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-superpan.webp",
+      "posterW": 1024,
+      "posterH": 576,
+      "draft": true
+    },
+    {
+      "slug": "gourmet-imok-smoke",
+      "title": "유스미식회: 이목 스모크다이닝",
+      "date": null,
+      "place": "신사 이목스모크다이닝",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-imok-smoke.webp",
+      "posterW": 1024,
+      "posterH": 576,
+      "draft": true
+    },
+    {
+      "slug": "gourmet-tienmimi-2",
+      "title": "유스미식회: 티엔미미 (정지선 셰프)",
+      "date": null,
+      "place": "티엔미미 강남점",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-tienmimi-2.webp",
+      "posterW": 1024,
+      "posterH": 576,
+      "draft": true
+    },
+    {
+      "slug": "gourmet-kongdu",
+      "title": "유스미식회: 콩두 명동 (박효남 셰프)",
+      "date": null,
+      "place": "콩두 명동",
+      "program": "gourmet",
+      "poster": "/posters/gourmet-kongdu.webp",
+      "posterW": 1024,
+      "posterH": 576,
+      "draft": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+---
+import { site, nav } from '../data/site';
+import { url } from '../lib/url';
+const year = new Date().getFullYear();
+---
+
+<footer class="foot">
+  <div class="shell">
+    <p class="mark">{site.name}</p>
+    <p class="line">{site.taglineKo}</p>
+    <nav aria-label="바닥글 메뉴">
+      {nav.map((n) => <a href={url(n.href)}>{n.label}</a>)}
+      <a href={url('/terms')}>이용약관</a>
+      <a href={url('/privacy')}>개인정보처리방침</a>
+    </nav>
+    <p class="fine">&copy; {year} {site.name}. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .foot {
+    border-top: 1px solid var(--line);
+    background: var(--paper-2);
+    padding-block: 3rem 3.5rem;
+  }
+  .mark {
+    margin: 0; font-weight: 700; font-size: 0.78rem;
+    letter-spacing: 0.24em; color: var(--wine-700);
+  }
+  .line { margin: 0.35rem 0 1.6rem; color: var(--text-2); font-size: 0.9rem; }
+  nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; }
+  nav a {
+    font-size: 0.86rem; color: var(--text-2); text-decoration: none;
+  }
+  nav a:hover { color: var(--wine-600); text-decoration: underline; }
+  .fine { margin: 1.8rem 0 0; font-size: 0.76rem; color: var(--text-3); }
+</style>
