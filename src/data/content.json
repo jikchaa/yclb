@@ -1,29 +1,34 @@
 {
   "_readme": "공개 사이트의 글. 관리자 화면(/admin/)이 이 파일을 고친다. 손으로 고쳐도 되고, 고쳐서 main 에 올리면 GitHub Actions 가 다시 짓는다.",
-
   "brand": {
     "name": "YOUTH CLUB SEOUL",
     "nameKo": "서울유스클럽",
     "tagline": "YOUTH is a state of mind.",
     "taglineSub": "A Private Network Built on Trust.",
-    "taglineKo": "가치있는 사람의 검증된 네트워크",
-    "description": "서울유스클럽은 검증된 프로페셔널이 신뢰를 기반으로 깊이 있게, 장기적으로 교류하는 프라이빗 네트워크입니다."
+    "taglineKo": "YCLB: 가치있는 사람의 검증된 네트워크",
+    "description": "서울유스클럽은 검증된 프로페셔널이 신뢰를 기반으로 깊이 있게 교류하는 프라이빗 네트워크입니다."
   },
-
   "joinFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScQRZqVIFoFe7v7lJf1mkBA9GVmwUUlD245I3bt8csFH4weWg/viewform",
-
   "home": {
     "belief": {
       "kicker": "What We Believe",
       "claim": "YOUTH란 나이가 아니라\n일상을 대하는 태도입니다.",
       "lede": "유스클럽은 청춘처럼 ‘내일’을 진지하게 고민하는 분들이 함께 유의미한 시간을 보내며 발전하는 공간입니다.",
       "pillars": [
-        { "title": "검증된 사람", "text": "모든 가입 신청자는 검토 과정을 거쳐 승인된 회원으로서 네트워크에 참여합니다. 누가 나올지 알 수 없는 자리를 만들지 않습니다." },
-        { "title": "깊이 있는 교류", "text": "인스턴트한 만남이 아니라, 다양성과 전문성을 갖춘 프로페셔널들이 장기적으로 이어 가는 관계를 지향합니다." },
-        { "title": "회원이 만드는 자리", "text": "회원이 직접 호스트가 되어 세션을 큐레이션합니다. 운영진이 차린 자리에 앉기만 하는 구조가 아닙니다." }
+        {
+          "title": "검증된 사람",
+          "text": "모든 가입 신청자는 검토 과정을 거쳐 승인된 회원으로서 네트워크에 참여합니다. 누가 나올지 알 수 없는 자리를 만들지 않습니다."
+        },
+        {
+          "title": "깊이 있는 교류",
+          "text": "인스턴트한 만남이 아니라, 다양성과 전문성을 갖춘 프로페셔널들이 장기적으로 이어 가는 관계를 지향합니다."
+        },
+        {
+          "title": "회원이 만드는 자리",
+          "text": "회원이 직접 호스트가 되어 세션을 큐레이션합니다. 운영진이 차린 자리에 앉기만 하는 구조가 아닙니다."
+        }
       ]
     },
-
     "record": {
       "kicker": "Track Record",
       "heading": "말보다 기록입니다.",
@@ -38,58 +43,103 @@
         "63빌딩"
       ]
     },
-
     "programsIntro": {
       "kicker": "Programs",
       "heading": "다섯 갈래로 만납니다.",
       "lede": "네트워킹 한 종류로는 깊이가 생기지 않습니다. 처음 만나는 자리와 오래 남는 자리를 나누어 설계합니다."
     },
-
     "chefs": {
       "kicker": "Youth Gourmet Session",
       "heading": "테이블에서 만난 이름들.",
       "lede": "유스미식회는 이름을 아는 셰프의 테이블에 앉습니다. 요리 이야기와 사람 이야기가 같이 갑니다.",
       "items": [
-        { "name": "여경래", "at": "홍보각" },
-        { "name": "최현석", "at": "달리아 다이닝" },
-        { "name": "정지선", "at": "티엔미미" },
-        { "name": "박은영", "at": "누와" },
-        { "name": "유용욱", "at": "이목" },
-        { "name": "후덕죽", "at": "호빈" }
+        {
+          "name": "여경래",
+          "at": "홍보각"
+        },
+        {
+          "name": "최현석",
+          "at": "달리아 다이닝"
+        },
+        {
+          "name": "정지선",
+          "at": "티엔미미"
+        },
+        {
+          "name": "박은영",
+          "at": "누와"
+        },
+        {
+          "name": "유용욱",
+          "at": "이목"
+        },
+        {
+          "name": "후덕죽",
+          "at": "호빈"
+        }
       ]
     },
-
     "membership": {
       "kicker": "Membership",
       "heading": "모든 가입 신청은 검토를 거칩니다.",
       "lede": "유스클럽은 비공개로 운영됩니다. 신청해 주시면 검토 후 승인된 회원으로서 네트워크에 참여하게 됩니다.",
       "steps": [
-        { "step": "신청", "text": "양식을 보내 주세요." },
-        { "step": "검토", "text": "운영진이 신청 내용을 확인합니다." },
-        { "step": "안내", "text": "결과와 다음 절차를 개별적으로 알려 드립니다." },
-        { "step": "참여", "text": "승인 후 회원 전용 채널과 모임에 참여하게 됩니다." }
+        {
+          "step": "신청",
+          "text": "양식을 보내 주세요."
+        },
+        {
+          "step": "검토",
+          "text": "운영진이 신청 내용을 확인합니다."
+        },
+        {
+          "step": "안내",
+          "text": "결과와 다음 절차를 개별적으로 알려 드립니다."
+        },
+        {
+          "step": "참여",
+          "text": "승인 후 회원 전용 채널과 모임에 참여하게 됩니다."
+        }
       ]
     }
   },
-
   "programs": [
-    { "id": "networking", "label": "YOUTH Networking", "kicker": "분기 정기 모임",
+    {
+      "id": "networking",
+      "label": "YOUTH Networking",
+      "kicker": "분기 정기 모임",
       "blurb": "분기마다 한 자리에 모입니다. 다양한 주제의 네트워킹과 아이스브레이킹으로 처음 온 회원도 대화를 시작할 수 있게 설계합니다.",
-      "poster": "/posters/q3-networking-andaz-2026.webp" },
-    { "id": "gourmet", "label": "유스미식회", "kicker": "YOUTH Gourmet Session",
+      "poster": "/posters/q3-networking-andaz-2026.webp"
+    },
+    {
+      "id": "gourmet",
+      "label": "유스미식회",
+      "kicker": "YOUTH Gourmet Session",
       "blurb": "이름을 아는 셰프의 테이블에 앉습니다. 여경래, 최현석, 정지선, 박은영, 유용욱 — 요리 이야기와 사람 이야기가 같이 갑니다.",
-      "poster": "/posters/gourmet-hongbogak.webp" },
-    { "id": "wine", "label": "프리미엄 와인", "kicker": "Wine Class & Tasting",
+      "poster": "/posters/gourmet-hongbogak.webp"
+    },
+    {
+      "id": "wine",
+      "label": "프리미엄 와인",
+      "kicker": "Wine Class & Tasting",
       "blurb": "Silver Oak, Far Niente, 샴페인 테이스팅부터 기초를 다지는 WINE CLASS까지. 취향을 갖추는 과정을 함께 밟습니다.",
-      "poster": "/posters/wine-silver-oak.webp" },
-    { "id": "insight", "label": "Insight & Host Session", "kicker": "전문성 교류",
+      "poster": "/posters/wine-silver-oak.webp"
+    },
+    {
+      "id": "insight",
+      "label": "Insight & Host Session",
+      "kicker": "전문성 교류",
       "blurb": "분야별 전문가와의 깊이 있는 교류, 멘토링, 인문·예술·철학 기반 세션. 회원이 직접 호스트가 되어 세션을 큐레이션합니다.",
-      "poster": "/posters/insight-session-2026-08.webp" },
-    { "id": "social", "label": "Gathering & Social", "kicker": "연간 행사와 액티비티",
+      "poster": "/posters/insight-session-2026-08.webp"
+    },
+    {
+      "id": "social",
+      "label": "Gathering & Social",
+      "kicker": "연간 행사와 액티비티",
       "blurb": "Year End Night, New Member Welcoming, 라운지 샴페인, 스포츠와 피크닉. 일과 삶, 교양과 취향의 균형을 둡니다.",
-      "poster": "/posters/youth-gathering-2025.webp" }
+      "poster": "/posters/youth-gathering-2025.webp"
+    }
   ],
-
   "about": {
     "heading": "YOUTH는 나이가 아니라\n일상을 대하는 태도입니다.",
     "believe": {
