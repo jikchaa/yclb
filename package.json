@@ -6,10 +6,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "check:editable": "node scripts/check-editable.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
-    "astro": "^5.14.1"
+    "astro": "^5.14.1",
+    "cropperjs": "^1.6.3"
   }
 }

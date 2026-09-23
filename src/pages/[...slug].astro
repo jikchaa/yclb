@@ -1,13 +1,23 @@
 ---
+/* 모든 공개 페이지. 어떤 페이지가 있는지는 site.json 이 정한다 —
+   관리자에서 페이지를 더하면 여기서 주소가 생긴다. */
 import '../styles/site.css';
 import { loadSite, loadEvents } from '../lib/load';
 import { renderPage } from '../render';
+import { indexable } from '../lib/env';
 
+export function getStaticPaths() {
+  return loadSite().pages
+    .filter((p: any) => p.id !== 'notfound')
+    .map((p: any) => ({ params: { slug: p.slug || undefined }, props: { pageId: p.id } }));
+}
+
+const { pageId } = Astro.props;
 const site = loadSite();
-const out = renderPage(site, loadEvents(), 'notfound', {
+const out = renderPage(site, loadEvents(), pageId, {
   base: import.meta.env.BASE_URL,
   origin: String(Astro.site || '').replace(/\/$/, ''),
-  indexable: false,
+  indexable,
 });
 const bodyClass = site.theme?.buttonStyle === 'outline' ? 'bs-outline' : '';
 ---

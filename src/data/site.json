@@ -1,0 +1,967 @@
+{
+  "_readme": "공개 사이트의 모든 글·페이지·메뉴·디자인. 관리자 화면(/admin/)이 이 파일을 고친다.",
+  "settings": {
+    "siteName": "YOUTH CLUB SEOUL",
+    "titleTemplate": "{page} · {site}",
+    "description": "서울유스클럽은 검증된 프로페셔널이 신뢰를 기반으로 깊이 있게 교류하는 프라이빗 네트워크입니다.",
+    "ogImage": "/og.jpg",
+    "favicon": "/icon-32.png",
+    "appleIcon": "/icon-180.png",
+    "joinFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScQRZqVIFoFe7v7lJf1mkBA9GVmwUUlD245I3bt8csFH4weWg/viewform",
+    "skipText": "본문으로"
+  },
+  "theme": {
+    "preset": "charcoal",
+    "colors": {
+      "bg": "#17171A",
+      "surface": "#1F1F23",
+      "band": "#4A1519",
+      "accent": "#C4454D",
+      "accentText": "#FFFFFF",
+      "text": "#EDEBE7",
+      "muted": "#A6A39E",
+      "faint": "#85827D",
+      "line": "#313136"
+    },
+    "font": "pretendard",
+    "headingFont": "same",
+    "baseSize": 16,
+    "headingScale": 1,
+    "headingWeight": 700,
+    "lineHeight": 1.75,
+    "radius": 4,
+    "contentWidth": 1120,
+    "buttonStyle": "solid",
+    "kickerStyle": "caps"
+  },
+  "header": {
+    "logo": "/logo.png",
+    "logoText": "YOUTH CLUB SEOUL",
+    "logoHeight": 22,
+    "logoInvert": false,
+    "layout": "left",
+    "sticky": true,
+    "background": "bg",
+    "border": true,
+    "menuStyle": "caps",
+    "height": "normal"
+  },
+  "menu": [
+    {
+      "label": "About",
+      "href": "page:about",
+      "show": true,
+      "style": "link"
+    },
+    {
+      "label": "Programs",
+      "href": "page:programs",
+      "show": true,
+      "style": "link"
+    },
+    {
+      "label": "Events",
+      "href": "page:events",
+      "show": true,
+      "style": "link"
+    },
+    {
+      "label": "Join",
+      "href": "page:join",
+      "show": true,
+      "style": "link"
+    }
+  ],
+  "footer": {
+    "title": "YOUTH CLUB SEOUL",
+    "tagline": "YCLB: 가치있는 사람의 검증된 네트워크",
+    "links": [
+      {
+        "label": "About",
+        "href": "page:about"
+      },
+      {
+        "label": "Programs",
+        "href": "page:programs"
+      },
+      {
+        "label": "Events",
+        "href": "page:events"
+      },
+      {
+        "label": "Join",
+        "href": "page:join"
+      },
+      {
+        "label": "이용약관",
+        "href": "page:terms"
+      },
+      {
+        "label": "개인정보처리방침",
+        "href": "page:privacy"
+      }
+    ],
+    "copyright": "© {year} YOUTH CLUB SEOUL. All rights reserved.",
+    "background": "surface"
+  },
+  "programs": [
+    {
+      "id": "networking",
+      "label": "YOUTH Networking",
+      "kicker": "분기 정기 모임",
+      "blurb": "분기마다 한 자리에 모입니다. 다양한 주제의 네트워킹과 아이스브레이킹으로 처음 온 회원도 대화를 시작할 수 있게 설계합니다.",
+      "image": "/posters/q3-networking-andaz-2026.webp"
+    },
+    {
+      "id": "gourmet",
+      "label": "유스미식회",
+      "kicker": "YOUTH Gourmet Session",
+      "blurb": "이름을 아는 셰프의 테이블에 앉습니다. 여경래, 최현석, 정지선, 박은영, 유용욱 — 요리 이야기와 사람 이야기가 같이 갑니다.",
+      "image": "/posters/gourmet-hongbogak.webp"
+    },
+    {
+      "id": "wine",
+      "label": "프리미엄 와인",
+      "kicker": "Wine Class & Tasting",
+      "blurb": "Silver Oak, Far Niente, 샴페인 테이스팅부터 기초를 다지는 WINE CLASS까지. 취향을 갖추는 과정을 함께 밟습니다.",
+      "image": "/posters/wine-silver-oak.webp"
+    },
+    {
+      "id": "insight",
+      "label": "Insight & Host Session",
+      "kicker": "전문성 교류",
+      "blurb": "분야별 전문가와의 깊이 있는 교류, 멘토링, 인문·예술·철학 기반 세션. 회원이 직접 호스트가 되어 세션을 큐레이션합니다.",
+      "image": "/posters/insight-session-2026-08.webp"
+    },
+    {
+      "id": "social",
+      "label": "Gathering & Social",
+      "kicker": "연간 행사와 액티비티",
+      "blurb": "Year End Night, New Member Welcoming, 라운지 샴페인, 스포츠와 피크닉. 일과 삶, 교양과 취향의 균형을 둡니다.",
+      "image": "/posters/youth-gathering-2025.webp"
+    }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "slug": "",
+      "label": "홈",
+      "seo": {
+        "title": "YOUTH CLUB SEOUL — YCLB: 가치있는 사람의 검증된 네트워크",
+        "description": "",
+        "noindex": false
+      },
+      "sections": [
+        {
+          "id": "home-hero",
+          "type": "hero",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "large",
+            "paddingBottom": "large",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "A Private Network Built on Trust.",
+          "title": "YOUTH is a state of mind.",
+          "subtitle": "YCLB: 가치있는 사람의 검증된 네트워크",
+          "text": "서울유스클럽은 검증된 프로페셔널이 신뢰를 기반으로 깊이 있게 교류하는 프라이빗 네트워크입니다.",
+          "buttons": [
+            {
+              "label": "가입 신청",
+              "href": "page:join",
+              "style": "primary"
+            },
+            {
+              "label": "우리가 믿는 것 →",
+              "href": "page:about",
+              "style": "text"
+            }
+          ],
+          "showLogo": false,
+          "logoHeight": 64,
+          "size": "tall"
+        },
+        {
+          "id": "home-belief",
+          "type": "features",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "What We Believe",
+          "title": "YOUTH란 나이가 아니라\n일상을 대하는 태도입니다.",
+          "text": "유스클럽은 청춘처럼 ‘내일’을 진지하게 고민하는 분들이 함께 유의미한 시간을 보내며 발전하는 공간입니다.",
+          "items": [
+            {
+              "title": "검증된 사람",
+              "text": "모든 가입 신청자는 검토 과정을 거쳐 승인된 회원으로서 네트워크에 참여합니다. 누가 나올지 알 수 없는 자리를 만들지 않습니다.",
+              "image": ""
+            },
+            {
+              "title": "깊이 있는 교류",
+              "text": "인스턴트한 만남이 아니라, 다양성과 전문성을 갖춘 프로페셔널들이 장기적으로 이어 가는 관계를 지향합니다.",
+              "image": ""
+            },
+            {
+              "title": "회원이 만드는 자리",
+              "text": "회원이 직접 호스트가 되어 세션을 큐레이션합니다. 운영진이 차린 자리에 앉기만 하는 구조가 아닙니다.",
+              "image": ""
+            }
+          ],
+          "columns": 3,
+          "cardStyle": "line",
+          "buttons": [
+            {
+              "label": "About 더 읽기 →",
+              "href": "page:about",
+              "style": "text"
+            }
+          ]
+        },
+        {
+          "id": "home-record",
+          "type": "stats",
+          "visible": true,
+          "style": {
+            "background": "surface",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "small",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Track Record",
+          "title": "말보다 기록입니다.",
+          "text": "{since}년 {sinceMonth}월부터 지금까지 서울유스클럽이 실제로 열어 온 자리입니다. 모임 하나하나가 회원의 시간을 받아 만든 것이라, 숫자를 늘리기보다 같은 수준을 반복하는 데 무게를 둡니다.",
+          "items": [
+            {
+              "label": "개최한 모임",
+              "value": "{eventCount}",
+              "unit": "회"
+            },
+            {
+              "label": "다녀온 장소",
+              "value": "{placeCount}",
+              "unit": "곳"
+            },
+            {
+              "label": "운영 프로그램",
+              "value": "{programCount}",
+              "unit": "종"
+            },
+            {
+              "label": "시작",
+              "value": "{since}",
+              "unit": "년"
+            }
+          ],
+          "tags": [
+            "Andaz Seoul Gangnam",
+            "그랜드 하얏트 서울",
+            "포시즌스 서울",
+            "Mondrian Itaewon Seoul",
+            "앰배서더 풀만",
+            "노보텔 앰배서더 강남",
+            "63빌딩"
+          ],
+          "buttons": []
+        },
+        {
+          "id": "home-recent",
+          "type": "events",
+          "visible": true,
+          "style": {
+            "background": "surface",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "small",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Recent",
+          "title": "",
+          "text": "",
+          "mode": "recent",
+          "limit": 6,
+          "program": "",
+          "groupByYear": false,
+          "showFilter": false,
+          "filterAllLabel": "전체",
+          "ratio": "16:9",
+          "showDate": true,
+          "showPlace": true,
+          "emptyText": "아직 기록이 없습니다.",
+          "buttons": [
+            {
+              "label": "전체 기록 {eventCount}건 보기 →",
+              "href": "page:events",
+              "style": "text"
+            }
+          ]
+        },
+        {
+          "id": "home-programs",
+          "type": "programs",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Programs",
+          "title": "다섯 갈래로 만납니다.",
+          "text": "네트워킹 한 종류로는 깊이가 생기지 않습니다. 처음 만나는 자리와 오래 남는 자리를 나누어 설계합니다.",
+          "layout": "list",
+          "showCount": false,
+          "countText": "지금까지 **{count}**회 열렸습니다.",
+          "showRecent": false,
+          "recentLimit": 4,
+          "buttons": [
+            {
+              "label": "프로그램 자세히 보기 →",
+              "href": "page:programs",
+              "style": "text"
+            }
+          ]
+        },
+        {
+          "id": "home-chefs",
+          "type": "names",
+          "visible": true,
+          "style": {
+            "background": "surface",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Youth Gourmet Session",
+          "title": "테이블에서 만난 이름들.",
+          "text": "유스미식회는 이름을 아는 셰프의 테이블에 앉습니다. 요리 이야기와 사람 이야기가 같이 갑니다.",
+          "items": [
+            {
+              "name": "여경래",
+              "sub": "홍보각"
+            },
+            {
+              "name": "최현석",
+              "sub": "달리아 다이닝"
+            },
+            {
+              "name": "정지선",
+              "sub": "티엔미미"
+            },
+            {
+              "name": "박은영",
+              "sub": "누와"
+            },
+            {
+              "name": "유용욱",
+              "sub": "이목"
+            },
+            {
+              "name": "후덕죽",
+              "sub": "호빈"
+            }
+          ],
+          "buttons": []
+        },
+        {
+          "id": "home-join",
+          "type": "steps",
+          "visible": true,
+          "style": {
+            "background": "band",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Membership",
+          "title": "모든 가입 신청은 검토를 거칩니다.",
+          "text": "유스클럽은 비공개로 운영됩니다. 신청해 주시면 검토 후 승인된 회원으로서 네트워크에 참여하게 됩니다.",
+          "items": [
+            {
+              "title": "신청",
+              "text": "양식을 보내 주세요."
+            },
+            {
+              "title": "검토",
+              "text": "운영진이 신청 내용을 확인합니다."
+            },
+            {
+              "title": "안내",
+              "text": "결과와 다음 절차를 개별적으로 알려 드립니다."
+            },
+            {
+              "title": "참여",
+              "text": "승인 후 회원 전용 채널과 모임에 참여하게 됩니다."
+            }
+          ],
+          "numbered": true,
+          "buttons": [
+            {
+              "label": "가입 신청하기",
+              "href": "page:join",
+              "style": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "slug": "about",
+      "label": "About",
+      "seo": {
+        "title": "About",
+        "description": "YOUTH란 나이가 아니라 일상을 대하는 태도입니다. 서울유스클럽은 신뢰를 기반으로 연결과 성장을 만들어가는 네트워크입니다.",
+        "noindex": false
+      },
+      "sections": [
+        {
+          "id": "about-hero",
+          "type": "hero",
+          "visible": true,
+          "style": {
+            "background": "band",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "About",
+          "title": "YOUTH는 나이가 아니라\n일상을 대하는 태도입니다.",
+          "subtitle": "",
+          "text": "",
+          "buttons": [],
+          "showLogo": false,
+          "logoHeight": 64,
+          "size": "normal"
+        },
+        {
+          "id": "about-believe",
+          "type": "text",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "narrow",
+            "anchor": ""
+          },
+          "kicker": "What We Believe",
+          "title": "YOUTH",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "YOUTH란, 나이가 아니라 일상을 대하는 태도입니다."
+            },
+            {
+              "type": "p",
+              "text": "유스클럽은 청춘처럼 ‘내일’을 진지하게 고민하는 분들이 함께 유의미한 시간을 보내며 발전하는 공간입니다."
+            },
+            {
+              "type": "p",
+              "text": "사무엘 울만(Samuel Ullman)의 시 〈YOUTH〉에서는 청춘을 나이가 아닌 의지와 상상력, 그리고 열정의 상태로 표현하였습니다."
+            },
+            {
+              "type": "quote",
+              "text": "두려움보다 용기를 선택하고, 이상을 잃지 않는 순간이 바로 청춘이다. 비관과 냉소에 마음이 굳어 이상을 버리는 순간, 비록 스무 살이라도 이미 늙은 것이다."
+            },
+            {
+              "type": "p",
+              "text": "이 시는 맥아더 장군이 늘 책상 위에 두고 읽었다고 전해지며, 70세가 넘어도 현역에서 활약하며 연설에서도 자주 인용했다고 합니다. YOUTH라는 단어가 그에게 얼마나 큰 힘이었는지 짐작할 수 있습니다."
+            },
+            {
+              "type": "p",
+              "text": "유스클럽은 이러한 정신을 본받아, **신뢰를 기반으로 연결과 성장을 만들어가는 네트워크**입니다."
+            }
+          ],
+          "buttons": []
+        },
+        {
+          "id": "about-why",
+          "type": "text",
+          "visible": true,
+          "style": {
+            "background": "surface",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "narrow",
+            "anchor": ""
+          },
+          "kicker": "Why YOUTH",
+          "title": "YOUTH의 가치",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "사회에는 파티, 동호회, 술자리, 커피 모임, 자기계발 등 다양한 형태로 사람을 인스턴트하게 만날 기회가 많습니다. 그러나 어떤 자리는 참여에 불명확한 비용이 들기도 하고, 어떤 자리는 누가 나올지, 어떤 의도로 다가오는지 파악이 어려운 경우도 있습니다."
+            },
+            {
+              "type": "p",
+              "text": "유스클럽은 **검증되고 안전한 환경**에서 다양성과 전문성을 갖춘 프로페셔널들이 깊이 있게, 장기적으로 교류할 수 있게 해준다는 데에서 타 커뮤니티와의 차별화를 추구합니다."
+            },
+            {
+              "type": "p",
+              "text": "이를 위해 유스클럽은 비공개의 형태로 운영되며, 모든 가입 신청자는 검토 과정을 거쳐 승인된 회원으로서 네트워크에 참여하게 됩니다."
+            },
+            {
+              "type": "p",
+              "text": "유스클럽은 구성원 간 의미있는 인연이 오래 이어질 수 있는 프라이빗 네트워크이자, 회원이 주체적으로 활용하며 함께 성장할 수 있는 커뮤니티를 지향합니다."
+            },
+            {
+              "type": "h",
+              "text": "YOUTH가 만드는 다른 방식의 네트워킹"
+            },
+            {
+              "type": "list",
+              "text": "다양한 주제의 네트워킹 및 아이스브레이킹 기회\n호스트가 되어 주도적으로 만들어나가는 큐레이션 경험\n분야별 전문가와의 깊이있는 교류 기회\n멘토링 세션을 통한 전문지식 습득 기회\n인문 · 예술 · 철학 기반 세션을 통한 깊이있는 경험\n신뢰에 기반한 동반성장과 시너지 효과\n일과 삶, 교양과 취향의 균형있는 조화\n지속적인 익명 건의사항 및 불편사항 접수를 통한 퀄리티 제고"
+            },
+            {
+              "type": "lead",
+              "text": "YOUTH는 나이가 아니라 일상을 대하는 태도입니다.\n유스클럽은 가치와 깊이에 기반한 네트워크이자, 커뮤니티입니다."
+            }
+          ],
+          "buttons": [
+            {
+              "label": "가입 신청 →",
+              "href": "page:join",
+              "style": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programs",
+      "slug": "programs",
+      "label": "Programs",
+      "seo": {
+        "title": "Programs",
+        "description": "YOUTH Networking, 유스미식회, 프리미엄 와인, Insight & Host Session, Gathering — 서울유스클럽이 운영하는 다섯 갈래의 프로그램입니다.",
+        "noindex": false
+      },
+      "sections": [
+        {
+          "id": "programs-hero",
+          "type": "hero",
+          "visible": true,
+          "style": {
+            "background": "band",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Programs",
+          "title": "처음 만나는 자리와\n오래 남는 자리를 나눕니다.",
+          "subtitle": "",
+          "text": "네트워킹 한 종류로는 깊이가 생기지 않습니다. 다섯 갈래를 따로 운영하는 이유입니다.",
+          "buttons": [],
+          "showLogo": false,
+          "logoHeight": 64,
+          "size": "normal"
+        },
+        {
+          "id": "programs-list",
+          "type": "programs",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "",
+          "title": "",
+          "text": "",
+          "layout": "detailed",
+          "showCount": true,
+          "countText": "지금까지 **{count}**회 열렸습니다.",
+          "showRecent": true,
+          "recentLimit": 4,
+          "buttons": [
+            {
+              "label": "전체 기록 보기 →",
+              "href": "page:events",
+              "style": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "slug": "events",
+      "label": "Events",
+      "seo": {
+        "title": "Events",
+        "description": "{since}년부터 서울유스클럽이 열어 온 {eventCount}회의 모임 기록입니다.",
+        "noindex": false
+      },
+      "sections": [
+        {
+          "id": "events-hero",
+          "type": "hero",
+          "visible": true,
+          "style": {
+            "background": "band",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Events",
+          "title": "{eventCount}회의 기록.",
+          "subtitle": "",
+          "text": "{since}년 {sinceMonth}월부터 지금까지, 실제로 열린 모임만 남겨 둡니다.",
+          "buttons": [],
+          "showLogo": false,
+          "logoHeight": 64,
+          "size": "normal"
+        },
+        {
+          "id": "events-all",
+          "type": "events",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "",
+          "title": "",
+          "text": "",
+          "mode": "all",
+          "limit": 0,
+          "program": "",
+          "groupByYear": true,
+          "showFilter": true,
+          "filterAllLabel": "전체",
+          "ratio": "16:9",
+          "showDate": true,
+          "showPlace": true,
+          "emptyText": "아직 기록이 없습니다.",
+          "buttons": []
+        }
+      ]
+    },
+    {
+      "id": "join",
+      "slug": "join",
+      "label": "Join",
+      "seo": {
+        "title": "Join",
+        "description": "서울유스클럽 가입 신청. 모든 신청은 검토 과정을 거쳐 승인된 회원으로서 네트워크에 참여하게 됩니다.",
+        "noindex": false
+      },
+      "sections": [
+        {
+          "id": "join-hero",
+          "type": "hero",
+          "visible": true,
+          "style": {
+            "background": "band",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Membership",
+          "title": "가입 신청",
+          "subtitle": "",
+          "text": "유스클럽은 비공개로 운영됩니다. 신청해 주시면 검토 후 승인된 회원으로서 네트워크에 참여하게 됩니다.",
+          "buttons": [],
+          "showLogo": false,
+          "logoHeight": 64,
+          "size": "normal"
+        },
+        {
+          "id": "join-apply",
+          "type": "apply",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "",
+          "title": "",
+          "text": "",
+          "stepsTitle": "절차",
+          "steps": [
+            {
+              "title": "신청",
+              "text": "양식을 보내 주세요."
+            },
+            {
+              "title": "검토",
+              "text": "운영진이 신청 내용을 확인합니다."
+            },
+            {
+              "title": "안내",
+              "text": "결과와 다음 절차를 개별적으로 알려 드립니다."
+            },
+            {
+              "title": "참여",
+              "text": "승인 후 회원 전용 채널과 모임에 참여하게 됩니다."
+            }
+          ],
+          "note": "보내 주신 정보는 가입 검토 목적으로만 씁니다. 수집 항목과 보유 기간은 [개인정보처리방침](page:privacy)에 적어 두었습니다.",
+          "boxTitle": "아래 버튼을 누르면 신청 양식으로 이동합니다.",
+          "buttonLabel": "신청 양식 열기",
+          "buttonHref": "join-form",
+          "emptyText": "신청 접수 준비 중입니다. 접수 경로가 연결되면 이 자리에서 바로 신청할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "terms",
+      "slug": "terms",
+      "label": "이용약관",
+      "seo": {
+        "title": "이용약관",
+        "description": "",
+        "noindex": true
+      },
+      "sections": [
+        {
+          "id": "terms-hero",
+          "type": "hero",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Terms & Agreements",
+          "title": "이용약관",
+          "subtitle": "",
+          "text": "",
+          "buttons": [],
+          "showLogo": false,
+          "logoHeight": 64,
+          "size": "compact"
+        },
+        {
+          "id": "terms-body",
+          "type": "text",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "none",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "narrow",
+            "anchor": ""
+          },
+          "kicker": "",
+          "title": "",
+          "blocks": [
+            {
+              "type": "note",
+              "text": "노션 위키의 **Terms & Agreements (이용 약관)** 본문이 들어갈 자리입니다. 관리자 화면에서 이 문단을 지우고 약관을 입력하세요. 이 페이지는 채워질 때까지 검색에서 빠져 있습니다."
+            }
+          ],
+          "buttons": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "slug": "privacy",
+      "label": "개인정보처리방침",
+      "seo": {
+        "title": "개인정보처리방침",
+        "description": "",
+        "noindex": true
+      },
+      "sections": [
+        {
+          "id": "privacy-hero",
+          "type": "hero",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "normal",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "Privacy",
+          "title": "개인정보처리방침",
+          "subtitle": "",
+          "text": "",
+          "buttons": [],
+          "showLogo": false,
+          "logoHeight": 64,
+          "size": "compact"
+        },
+        {
+          "id": "privacy-body",
+          "type": "text",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "none",
+            "paddingBottom": "normal",
+            "align": "left",
+            "width": "narrow",
+            "anchor": ""
+          },
+          "kicker": "",
+          "title": "",
+          "blocks": [
+            {
+              "type": "note",
+              "text": "가입 신청을 이 사이트에서 받기 시작하는 순간 이 문서가 실제로 필요합니다. 아래 항목을 확정해 채우고, 공개 전에 한 번 검토받으시는 편이 안전합니다. 이 페이지는 채워질 때까지 검색에서 빠져 있습니다."
+            },
+            {
+              "type": "h",
+              "text": "확정이 필요한 항목"
+            },
+            {
+              "type": "list",
+              "text": "**수집 항목** — 현재 가입 신청 구글폼이 무엇을 받고 있는지 그대로\n**수집 목적** — 가입 검토, 승인 안내, 모임 운영 연락\n**보유 기간** — 승인 시 / 미승인 시 각각 언제 지우는지\n**처리 위탁** — Google Workspace(폼·시트·메일) 사용 사실\n**파기 방법** — 시트 행 삭제 등 실제 절차\n**문의 창구** — 개인정보 관련 연락받을 주소 (개인 번호가 아닌 대표 메일 권장)"
+            }
+          ],
+          "buttons": []
+        }
+      ]
+    },
+    {
+      "id": "notfound",
+      "slug": "404",
+      "label": "404",
+      "seo": {
+        "title": "페이지를 찾을 수 없습니다",
+        "description": "",
+        "noindex": true
+      },
+      "sections": [
+        {
+          "id": "notfound-hero",
+          "type": "hero",
+          "visible": true,
+          "style": {
+            "background": "default",
+            "bgColor": "",
+            "bgImage": "",
+            "overlay": 50,
+            "paddingTop": "large",
+            "paddingBottom": "large",
+            "align": "left",
+            "width": "normal",
+            "anchor": ""
+          },
+          "kicker": "404",
+          "title": "페이지를 찾을 수 없습니다.",
+          "subtitle": "",
+          "text": "찾으시는 페이지가 없습니다. 주소가 바뀌었거나 지워진 자리입니다.",
+          "buttons": [
+            {
+              "label": "홈으로 돌아가기 →",
+              "href": "page:home",
+              "style": "secondary"
+            }
+          ],
+          "showLogo": false,
+          "logoHeight": 64,
+          "size": "normal"
+        }
+      ]
+    }
+  ]
+}

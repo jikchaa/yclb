@@ -1,0 +1,47 @@
+---
+/* 사이트 관리 화면. 검색에서 빠지고 사이트맵에도 들어가지 않는다.
+   토큰이 없는 사람은 열어 볼 수는 있어도 아무것도 저장하지 못한다. */
+const fontCss = (import.meta.env.BASE_URL + '/fonts/pretendard/pretendardvariable-dynamic-subset.css').split('//').join('/');
+---
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>사이트 관리 · YCLB</title>
+    <link rel="stylesheet" href={fontCss} />
+  </head>
+  <body>
+    <header id="bar">
+      <h1>YCLB 사이트 관리</h1>
+      <span id="state">불러오는 중…</span>
+      <span id="tokenState"></span>
+      <a class="btn" id="viewSite" target="_blank" rel="noopener">사이트 보기</a>
+      <button type="button" class="btn" id="token">토큰</button>
+      <button type="button" class="btn" id="reload">불러오기</button>
+      <button type="button" class="btn" id="revert" disabled>되돌리기</button>
+      <button type="button" class="btn primary" id="publish" disabled>게시</button>
+    </header>
+    <div id="deploy" hidden></div>
+    <div id="layout">
+      <nav id="tabs" aria-label="관리 메뉴"></nav>
+      <section id="editor" aria-label="편집"></section>
+      <section id="pv" aria-label="미리보기">
+        <div id="pv-bar">
+          <select id="pv-page" aria-label="미리볼 페이지"></select>
+          <div class="seg">
+            <button type="button" class="on" data-device="desktop">데스크톱</button>
+            <button type="button" data-device="mobile">모바일</button>
+          </div>
+          <span class="spacer"></span>
+          <span class="help">구역을 누르면 그 구역을 고칩니다</span>
+        </div>
+        <div id="frame-wrap" class="desktop"><iframe id="frame" title="미리보기"></iframe></div>
+      </section>
+    </div>
+    <button type="button" class="btn primary" id="pv-toggle">미리보기</button>
+    <script>
+      import '../../admin/main.ts';
+    </script>
+  </body>
+</html>
